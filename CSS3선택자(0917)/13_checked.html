@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=checkbox]:checked+div
+        {
+            height: 0;
+        }
+        div
+        {
+            overflow: hidden;
+            width: 650px;
+            height: 300px;
+            transition-duration: 1s;
+
+            /* 구형 웹브라우저에서는 이 transition-duration이 일종의
+            출시 직전의 실험기능에 해당된다 */
+            /* 앞에 -ms- -webkit- -moz- 이런걸 벤더 프리픽스
+            -ms- 마이크로소프트, -moz-모질라재단(파이어폭스)
+            -webkit-애플에서 처음 만듦 지금은 크롬,오페라,사파리에서
+            쓰이고 있는데 크롬은 '블링크'라는 이름의 다른 엔진을 사용 */
+            -ms-transition-duration:1s;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, perspiciatis! Mollitia eum vitae odio repellendus dignissimos necessitatibus incidunt, inventore, modi sint, temporibus deleniti voluptas nisi. Reprehenderit eum assumenda nostrum in est beatae quod eligendi similique doloremque, quis tempore. Asperiores ea consequuntur, natus maiores perspiciatis at tenetur fugit dolor doloremque, ipsam quibusdam tempora veritatis nesciunt iure in libero dignissimos totam quaerat omnis assumenda nobis nulla modi obcaecati! Modi, aperiam. Quas vel reiciendis nulla, aperiam facere officiis. Exercitationem magnam at repellendus, itaque, incidunt consequuntur eveniet dolorum ipsum fugit in explicabo corporis aspernatur. Iste magni quidem assumenda repellendus rerum molestiae quis dolores nam, totam animi, adipisci doloribus molestias debitis quos delectus sapiente enim consectetur eveniet placeat sed ut! Rem, quasi quibusdam. Nulla officia voluptatum id neque possimus a rem praesentium veritatis optio, nemo omnis quod porro consequatur debitis distinctio cum voluptas corrupti laboriosam ratione impedit animi sint dolores, nesciunt quo. Consequatur placeat nobis cum impedit adipisci, est dolores suscipit quibusdam nihil perspiciatis harum officiis non explicabo quos dolor vel pariatur. Provident velit sequi vel laboriosam omnis ea! Ea non numquam quae illo sit aliquam rerum enim quam asperiores commodi, praesentium, ad, culpa hic. Deserunt odit at temporibus nemo magnam cum! Neque distinctio consequatur a dignissimos provident quo nihil modi doloremque ut, beatae quibusdam reiciendis. Esse voluptatibus nam similique autem earum minima numquam iste nisi necessitatibus obcaecati animi magni sequi a possimus, in beatae officia ea delectus fugit! Quia dolorem quam ut autem molestiae sed tempora repellendus inventore dolorum non sequi quasi beatae, delectus corrupti praesentium eum illo et quos quisquam cupiditate aliquid quae facere eos vel? Quam consequuntur iste dolorum quasi possimus unde voluptatem magni culpa numquam odio dolor eos atque deleniti aspernatur, quod qui illum aut sit sapiente eveniet nesciunt provident! Nemo odio animi ex ullam quia repudiandae dolores optio eius. Nam!</p>
+    </div>
+</body>
+</html>
